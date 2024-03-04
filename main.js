@@ -1,3 +1,4 @@
+import { Cena1 } from "./scenes/cena1.js";
 import { Menu } from "./scenes/menu.js";
 
 // Configuração para inicialização do jogo
@@ -11,11 +12,12 @@ var config = {
     physics: {
         default: 'arcade',
         arcade: {
+            debug: true,
             gravity: { y: 900 },
         }
     },
     pixelArt: true,
-    scene: [Menu]
+    scene: [Menu, Cena1]
 };
 // Inicialização do jogo
 const game = new Phaser.Game(config);
